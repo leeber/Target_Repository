@@ -448,17 +448,17 @@ th {
 /* START CLEARFIX */
 
 
-.clearfix:before,
-.clearfix:after {
+.cf:before,
+.cf:after {
   content: "";
   display: table;
 }
  
-.clearfix:after {
+.cf:after {
   clear: both;
 }
  
-.clearfix {
+.cf {
   zoom: 1; /* ie 6/7 */
 }
 

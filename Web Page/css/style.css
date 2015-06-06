@@ -4,19 +4,121 @@
 
 */
 
-
+/* GLOBAL SETTINGS */
+a{
+	color: white;
+	text-decoration: none;
+}
 body{
-	background: grey;
 	margin: 0;
-	padding: 0;
 	font-size: 85%;
 	font-family: "Helvetica Neue",Helvetica,Arial;
+}
+header{
+	margin-top: 50px;
+	width: 1000px;
 }
 .dropdown{
 	display: none;
 }
-img{
-	background: orange;
-	float: right;
-	margin: 20px;
+
+.bold{
+	font-weight: 700;
 }
+
+.bgred{
+	background: url(../images/background.png) repeat-x top left;
+	/*background: #c00;*/
+}
+.wrap{
+	height: 100%;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+
+/* HEADER */
+
+	.whitestrip {
+		background: white;
+		height: 45px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.redstrip{
+		height: 95px;
+		position: absolute;
+		top: 45px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: -1;
+	}
+
+	/* HEADER FIRST HALF */
+		.headernav ul{
+			margin-top: 0;
+		}
+		.usermenu{
+			margin-left: 30px;
+			margin-right: 45px;
+		}
+		.logo img{
+			margin: 4px 0 0 64px;
+			float: left;
+		}
+		.headernav{
+			float: left;
+			padding: 22px 0 16px 0;
+			margin-left: -5px;
+			font-size: 12px;
+		}
+		.headernav ul{
+			float: left;
+		}
+		.headernav ul li{
+			display: inline-block;
+		}
+		.topnav{
+			padding: 0;
+			margin: 0;
+		}
+		.topnav ul{
+			padding: 0;
+			margin: 0;
+		}
+		.topnav li a{
+			margin: 0;
+			padding: 0 8px;
+		}
+		.topnav li:first-child a{
+			padding-left: 0;
+		}
+		.redbag{
+			margin-top: 15px;
+		}
+
+	/* BIG ASS DROP DOWN */
+
+		.h2navdropdown_link a, .h2navdropdown_label a{
+			text-decoration: none;
+			color: black;
+		}
+
+		.h2navdropdown_label{
+			margin-top: 20px;
+		}
+		.category{
+			display: none;
+		}
+		.category a{
+			color: white;
+			text-decoration: none;
+		}
+		.dropdownlvl2{
+			display: none;
+		}

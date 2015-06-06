@@ -1,0 +1,246 @@
+
+
+/* ==========================================================================
+    Global CSS Styles & Modules
+    Last Updated On 11/26/14 By Josh.Leibold
+   ========================================================================== */
+
+
+/* Resets & Normalize.css Includes
+   ========================================================================== */
+
+/**
+* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+*/
+
+strong { font-weight: bold; }
+
+
+/**
+* Line break class for screenreaders.
+*/
+
+.sc-br {
+  display: block;
+}
+
+
+/*
+* Hide text visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.sc-hide-visually {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+* Proper <sup> tag styling.
+*/
+
+.sc-superscript {
+  position: relative;
+  padding-left: 1px;
+  font-size: .75em;
+  vertical-align: baseline;
+  line-height: 0;
+  top: -0.5em;
+}
+
+
+/* Link List
+   ========================================================================== */
+
+/**
+ * <ul class="sc-link-list  sc-link-list--horizontal">
+ *  <li><a href="#">shop pants</a></li>
+ *  <li class="last-child"><a href="#">shop jeans</a></li>
+ * </ul>
+ */
+
+/* Default Link List Class (Vertical) */
+
+.sc-link-list {
+  overflow: hidden;
+   margin: 0 0 0 -7px;
+}
+
+.sc-link-list a {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  padding: 3px 7px 4px;
+}
+
+
+/* Modifier Class – Horizontal Link List W/ Dividers  */
+
+.sc-link-list--horizontal {
+  margin: 0 0 0 -7px;
+}
+
+.sc-link-list--horizontal li {
+  border-right: 1px solid #ccc;
+  float: left;
+}
+
+.sc-link-list--horizontal a {
+  display: inline-block;
+  padding: 3px 7px 4px;
+}
+
+.sc-link-list--horizontal li.last-child { border: none; }  /* Use to remove default border on last <li> item */
+.sc-link-list--horizontal li.hotspot { border: none; }  /* Removes default list border on hotspots */
+
+
+
+/* Modifier Class – Stacked Centered Link List  */
+
+.sc-link-list--centered {
+  text-align: center;
+}
+
+
+/* Centering Class for ULs – Needs to be applied to a parent <div> element  */
+
+.sc-centered {
+  text-align: center;
+  display: table; /* CSS trick for centering a ul */
+  margin: 0 auto;
+}
+
+
+/* Hotspots
+   ========================================================================== */
+
+/**
+ * <ul class="sc-link-list">
+ *    <li><a href="#">shop pants</a></li>
+ *    <li><a href="#" class="sc-hotspot  sc-hotspot--jeans">shop jeans</a></li>
+ * </ul>
+ */
+
+
+.sc-hotspot {
+    display: block;
+    cursor: pointer;
+    padding: 0 !important;
+    font-size: 0;
+    text-indent: -99999px;
+    position: absolute;
+    z-index: 999;
+    background-image: url("http://static.targetimg1.com/2012/ol/global/images/trans.gif");
+}
+
+
+/* Font Classes
+   ========================================================================== */
+
+/* General Headline Class */
+
+.sc-hdr {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px !important;
+}
+
+/* Headline Modifier  Classes ( Font Size - Hex Color Code ) */
+
+.sc-hdr--36px-111  { font-size: 36px; line-height: 38px; color: #111 !important; }
+.sc-hdr--44px-111  { font-size: 44px; line-height: 46px; color: #111 !important; }
+.sc-hdr--14px-333  { font-size: 14px; line-height: 18px; color: #333 !important; }
+.sc-hdr--18px-333  { font-size: 18px; line-height: 20px; color: #333 !important; }
+.sc-hdr--22px-333  { font-size: 22px; line-height: 26px; color: #333 !important; }
+.sc-hdr--24px-333  { font-size: 24px; line-height: 26px; color: #333 !important; }
+.sc-hdr--32px-333  { font-size: 32px; line-height: 34px; color: #333 !important; }
+.sc-hdr--36px-333  { font-size: 36px; line-height: 38px; color: #333 !important; }
+.sc-hdr--44px-333  { font-size: 44px; line-height: 42px; color: #333 !important; }
+.sc-hdr--13px-666  { font-size: 13px; line-height: 17px; color: #666 !important; }
+.sc-hdr--14px-666  { font-size: 14px; line-height: 18px; color: #666 !important; }
+.sc-hdr--16px-666  { font-size: 16px; line-height: 22px; color: #666 !important; }
+.sc-hdr--18px-666  { font-size: 18px; line-height: 22px; color: #666 !important; }
+.sc-hdr--36px-666  { font-size: 36px; line-height: 38px; color: #666 !important; }
+.sc-hdr--12px-999  { font-size: 12px; line-height: 16px; color: #999 !important; }
+.sc-hdr--14px-999  { font-size: 14px; line-height: 18px; color: #999 !important; }
+.sc-hdr--36px-999  { font-size: 36px; line-height: 38px; color: #999 !important; }
+.sc-hdr--14px-fff  { font-size: 14px; line-height: 18px; color: #fff !important; }
+.sc-hdr--18px-fff  { font-size: 18px; line-height: 20px; color: #fff !important; }
+.sc-hdr--20px-fff  { font-size: 20px; line-height: 24px; color: #fff !important; }
+.sc-hdr--22px-fff  { font-size: 22px; line-height: 26px; color: #fff !important; }
+
+/* Web Safe Font Color Modifiers */
+
+.sc-hdr--red { color: #cc0000 !important; }  /* Web Safe Red */
+
+
+
+
+
+
+/**
+ * Update · 12/26/14 · josh.leibold
+ *
+ * The below CSS was hiding DVM / Rich Promo Placements on lower level pages.
+ * How it got here and the problem it fixed... no one knows, but it's commented out to fix the current issue.
+ *
+ */
+
+/*#Core.plpRun #dvm_gpt-category_page-site_merch_promo_global_slot, #Core.plpRun #dvm_gpt-category_page-site_merch_promo_banner {
+    display: none;
+}*/
+
+
+/* Live Site - Overlap Issue */
+
+#OC_103013_TSOL_TpTys_Bnr {margin-top: -75px !important;}
+
+#MMBEasterMar14_EL1{background:url("http://static.targetimg1.com/DVM/2014/brands/MMBEaster/MMBEasterMar14_EL1.jpg") no-repeat scroll 0 0 transparent !important}
+
+#categoryHeaderPromoArea .promo-msg{margin-top: -10px; font-size:14px !important;}
+
+
+/*Accessibility Issues*/
+
+p.copy, #L1L2_KBed_050513_X0Y8W4_C p, #L1L2_KDFur_050513_X0Y8W4_C p, #L1L2_LRFur_050513_X0Y8W4_C p, #Utility_MnCloth_0217_X0Y4_C p, #Utility_WmnAcc_1230_X0Y5W4_C p,
+#L1L2_Bed_050513_X0Y8W4_C p.copy, #L1L2_iPdTb_041314_X0Y8W4_C p{color:#696969 !important}
+p.copy a, #Utility_sleep_0210_X0Y5W4_C a, #Utility_WmnShoe_0210_X0Y4_C a, #Utility_MnCloth_0217_X0Y4_C a, #L1L2_iPdTb_041314_X0Y8W4_C a{
+	color:#454545 !important;
+	font-weight:bold !important;
+}
+
+
+
+/* ==========================================================================
+    Section Comment Block
+   ========================================================================== */
+
+/* Sub-section comment block
+   ========================================================================== */
+
+/**
+ * Short description using Doxygen-style comment format
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ *
+ * @tag This is a tag named 'tag'
+ *
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ */
+
+/* Basic comment */
+#Main .R5-wide_img_category-large ul.three-image li .catLink a {
+font-size: 21px !important;
+}
